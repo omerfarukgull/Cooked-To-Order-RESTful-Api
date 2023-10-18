@@ -17,3 +17,93 @@
    at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-10-18 18:01:56.9356 INFO {"ModelModel":"OnActionExecuting","Controller":"Foods","Action":"GetAllFoods","Id":null,"CreateAt":"2023-10-18T15:01:56.9093076Z"}
+2023-10-18 18:02:18.1478 ERROR Something went wrong: System.ArgumentNullException: Value cannot be null. (Parameter 'predicate')
+   at System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   at CookedToFoodCore.DataAccess.Ef.EfCoreGenericRepository`1.GetList(Expression`1 filter) in C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodCore\DataAccess\Ef\EfCoreGenericRepository.cs:line 26
+   at CookedToOrderData.Concrete.EfFoodRepository.GetAllFoodsAsync(FoodParameters foodParameters) in C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderData\Concrete\EfFoodRepository.cs:line 18
+   at CookedToOrderBusiness.Concrete.FoodManager.GetAllFoodsAsync(FoodParameters foodParameters) in C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderBusiness\Concrete\FoodManager.cs:line 41
+   at CookedToFoodPresentation.Controllers.FoodsController.GetAllFoods(FoodParameters bookParameters) in C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodPresentation\Controllers\FoodsController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-10-18 18:02:30.4297 INFO {"ModelModel":"OnActionExecuting","Controller":"Foods","Action":"GetAllFoods","Id":null,"CreateAt":"2023-10-18T15:02:30.4296886Z"}
+2023-10-18 18:02:49.5310 ERROR Something went wrong: System.ArgumentNullException: Value cannot be null. (Parameter 'predicate')
+   at System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   at CookedToFoodCore.DataAccess.Ef.EfCoreGenericRepository`1.GetList(Expression`1 filter) in C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodCore\DataAccess\Ef\EfCoreGenericRepository.cs:line 26
+   at CookedToOrderData.Concrete.EfFoodRepository.GetAllFoodsAsync(FoodParameters foodParameters) in C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderData\Concrete\EfFoodRepository.cs:line 18
+   at CookedToOrderBusiness.Concrete.FoodManager.GetAllFoodsAsync(FoodParameters foodParameters) in C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderBusiness\Concrete\FoodManager.cs:line 41
+   at CookedToFoodPresentation.Controllers.FoodsController.GetAllFoods(FoodParameters bookParameters) in C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodPresentation\Controllers\FoodsController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-10-18 18:02:56.5176 INFO {"ModelModel":"OnActionExecuting","Controller":"Foods","Action":"GetAllFoods","Id":null,"CreateAt":"2023-10-18T15:02:56.5176126Z"}
+2023-10-18 18:03:54.1605 ERROR Something went wrong: System.ArgumentNullException: Value cannot be null. (Parameter 'predicate')
+   at System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   at CookedToFoodCore.DataAccess.Ef.EfCoreGenericRepository`1.GetList(Expression`1 filter) in C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodCore\DataAccess\Ef\EfCoreGenericRepository.cs:line 26
+   at CookedToOrderData.Concrete.EfFoodRepository.GetAllFoodsAsync(FoodParameters foodParameters) in C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderData\Concrete\EfFoodRepository.cs:line 18
+   at CookedToOrderBusiness.Concrete.FoodManager.GetAllFoodsAsync(FoodParameters foodParameters) in C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderBusiness\Concrete\FoodManager.cs:line 41
+   at CookedToFoodPresentation.Controllers.FoodsController.GetAllFoods(FoodParameters bookParameters) in C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodPresentation\Controllers\FoodsController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-10-18 18:07:37.5016 INFO {"ModelModel":"OnActionExecuting","Controller":"Foods","Action":"GetAllFoods","Id":null,"CreateAt":"2023-10-18T15:07:37.4803326Z"}
+2023-10-18 18:10:04.1777 INFO {"ModelModel":"OnActionExecuting","Controller":"Foods","Action":"GetOneFoodById","Id":"51","CreateAt":"2023-10-18T15:10:04.1776099Z"}
+2023-10-18 18:10:40.4937 INFO {"ModelModel":"OnActionExecuting","Controller":"Foods","Action":"GetOneFoodById","Id":"54","CreateAt":"2023-10-18T15:10:40.4937571Z"}
+2023-10-18 18:10:40.5919 ERROR Something went wrong: CookedToOrderEntity.Exceptions.FoodNotFoundException: Bu 54 İd'li Yemek bulunamadı. 
+   at CookedToOrderBusiness.Concrete.FoodManager.GetOneBookByIdAndCheckExists(Int32 id) in C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderBusiness\Concrete\FoodManager.cs:line 65
+   at CookedToOrderBusiness.Concrete.FoodManager.GetOneFoodByIdAsync(Int32 id) in C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderBusiness\Concrete\FoodManager.cs:line 47
+   at CookedToFoodPresentation.Controllers.FoodsController.GetOneFoodById(Int32 id) in C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodPresentation\Controllers\FoodsController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-10-18 18:11:42.6494 INFO {"ModelModel":"OnActionExecuting","Controller":"Foods","Action":"GetAllFoods","Id":null,"CreateAt":"2023-10-18T15:11:42.6494058Z"}
+2023-10-18 18:11:56.8991 INFO {"ModelModel":"OnActionExecuting","Controller":"Foods","Action":"GetAllFoods","Id":null,"CreateAt":"2023-10-18T15:11:56.8990839Z"}

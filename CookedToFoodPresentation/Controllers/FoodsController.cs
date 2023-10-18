@@ -1,6 +1,7 @@
 ﻿using CookedToFoodPresentation.ActionFilter;
 using CookedToOrderBusiness.Abstract;
 using CookedToOrderEntity.DataTransferObjects;
+using Entities.RequestParameters;
 using Microsoft.AspNetCore.Mvc;
 using Presentation.ActionFilter;
 
@@ -18,9 +19,9 @@ namespace CookedToFoodPresentation.Controllers
             _manager = manager;
         }
         [HttpGet]
-        public async Task<IActionResult> GetAllFoods()
+        public async Task<IActionResult> GetAllFoods([FromQuery]FoodParameters bookParameters)
         {
-            var foods = await _manager.FoodService.GetFoodListAsync();
+            var foods = await _manager.FoodService.GetAllFoodsAsync(bookParameters);
             return Ok(foods);
         }
         [HttpGet("{id:int}")]

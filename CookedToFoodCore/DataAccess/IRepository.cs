@@ -10,7 +10,7 @@ namespace CookedToFoodCore.DataAccess
     public interface IRepository<T> where T : class
     {
         T Get(Expression<Func<T,bool>> filter = null);
-        List<T> GetList(Expression<Func<T,bool>> filter = null);
+        IQueryable<T> GetList(Expression<Func<T,bool>> filter = null);
 
         void Create(T entity);
         void Update(T entity);

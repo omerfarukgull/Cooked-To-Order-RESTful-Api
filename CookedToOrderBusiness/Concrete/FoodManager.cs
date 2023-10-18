@@ -4,6 +4,7 @@ using CookedToOrderData.Abstract;
 using CookedToOrderEntity.DataTransferObjects;
 using CookedToOrderEntity.Exceptions;
 using CookedToOrderEntity.Models;
+using Entities.RequestParameters;
 using Services.Abstract;
 
 namespace CookedToOrderBusiness.Concrete
@@ -35,9 +36,10 @@ namespace CookedToOrderBusiness.Concrete
             await _manager.SaveAsync();
         }
 
-        public async Task<List<Food>> GetFoodListAsync()
+        public async Task<IEnumerable<FoodDto>> GetAllFoodsAsync(FoodParameters foodParameters)
         {
-            return _manager.Food.GetList(); ;
+            var foods = await _manager.Food.GetAllFoodsAsync(foodParameters);
+            return _mapper.Map<IEnumerable<FoodDto>>(foods);
         }
 
         public async Task<FoodDto> GetOneFoodByIdAsync(int id)

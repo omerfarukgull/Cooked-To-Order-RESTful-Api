@@ -2,3 +2,12 @@
 2023-10-18 13:01:47.5618 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
 2023-10-18 13:01:47.5776 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderWebApi\nlog.config
 2023-10-18 13:01:47.5776 Info Configuration initialized.
+2023-10-18 18:01:11.7018 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-10-18 18:01:11.7357 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-10-18 18:01:11.7496 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderWebApi\nlog.config
+2023-10-18 18:01:11.7496 Info Configuration initialized.
+2023-10-18 18:04:03.1050 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-10-18 18:07:23.0699 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-10-18 18:07:23.1402 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-10-18 18:07:23.1402 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderWebApi\nlog.config
+2023-10-18 18:07:23.1659 Info Configuration initialized.

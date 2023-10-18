@@ -22,10 +22,10 @@ namespace CookedToFoodCore.DataAccess.Ef
 
         public T Get(Expression<Func<T, bool>> filter = null) => _context.Set<T>().AsNoTracking().SingleOrDefault(filter);
 
-        public List<T> GetList(Expression<Func<T, bool>> filter = null) =>
-               filter == null
-            ? _context.Set<T>().ToList()
-            : _context.Set<T>().Where(filter).ToList();
+        public IQueryable<T> GetList(Expression<Func<T, bool>> filter = null) =>
+               filter != null
+            ? _context.Set<T>().Where(filter).AsNoTracking()
+            : _context.Set<T>().AsNoTracking();
 
         public void Update(T entity) => _context.Set<T>().Update(entity);
     }
