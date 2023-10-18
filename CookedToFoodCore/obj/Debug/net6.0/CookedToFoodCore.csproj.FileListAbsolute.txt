@@ -1,0 +1,12 @@
+C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodCore\bin\Debug\net6.0\CookedToFoodCore.deps.json
+C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodCore\bin\Debug\net6.0\CookedToFoodCore.dll
+C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodCore\bin\Debug\net6.0\CookedToFoodCore.pdb
+C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodCore\obj\Debug\net6.0\CookedToFoodCore.csproj.AssemblyReference.cache
+C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodCore\obj\Debug\net6.0\CookedToFoodCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodCore\obj\Debug\net6.0\CookedToFoodCore.AssemblyInfoInputs.cache
+C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodCore\obj\Debug\net6.0\CookedToFoodCore.AssemblyInfo.cs
+C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodCore\obj\Debug\net6.0\CookedToFoodCore.csproj.CoreCompileInputs.cache
+C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodCore\obj\Debug\net6.0\CookedToFoodCore.dll
+C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodCore\obj\Debug\net6.0\refint\CookedToFoodCore.dll
+C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodCore\obj\Debug\net6.0\CookedToFoodCore.pdb
+C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodCore\obj\Debug\net6.0\ref\CookedToFoodCore.dll

@@ -1,0 +1,12 @@
+C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderEntity\bin\Debug\net6.0\CookedToOrderEntity.deps.json
+C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderEntity\bin\Debug\net6.0\CookedToOrderEntity.dll
+C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderEntity\bin\Debug\net6.0\CookedToOrderEntity.pdb
+C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderEntity\obj\Debug\net6.0\CookedToOrderEntity.csproj.AssemblyReference.cache
+C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderEntity\obj\Debug\net6.0\CookedToOrderEntity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderEntity\obj\Debug\net6.0\CookedToOrderEntity.AssemblyInfoInputs.cache
+C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderEntity\obj\Debug\net6.0\CookedToOrderEntity.AssemblyInfo.cs
+C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderEntity\obj\Debug\net6.0\CookedToOrderEntity.csproj.CoreCompileInputs.cache
+C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderEntity\obj\Debug\net6.0\CookedToOrderEntity.dll
+C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderEntity\obj\Debug\net6.0\refint\CookedToOrderEntity.dll
+C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderEntity\obj\Debug\net6.0\CookedToOrderEntity.pdb
+C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderEntity\obj\Debug\net6.0\ref\CookedToOrderEntity.dll
