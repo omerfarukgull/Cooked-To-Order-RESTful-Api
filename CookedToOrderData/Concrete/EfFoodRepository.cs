@@ -14,11 +14,13 @@ namespace CookedToOrderData.Concrete
 
         }
 
-        public async Task<IEnumerable<Food>> GetAllFoodsAsync(FoodParameters foodParameters) =>
-            await GetList()
-            .OrderBy(f=>f.FoodId)
-            .Skip((foodParameters.PageNumber-1)*foodParameters.PageSize)
-            .Take(foodParameters.PageSize)
-            .ToListAsync();
+        public async Task<PagedList<Food>> GetAllFoodsAsync(FoodParameters foodParameters)
+        {
+            var foods = await GetList()
+                        .OrderBy(f => f.FoodId)
+                        .ToListAsync();
+            return PagedList<Food>.ToPagedList(foods, foodParameters.PageNumber, foodParameters.PageSize);
+        }
+
     }
 }

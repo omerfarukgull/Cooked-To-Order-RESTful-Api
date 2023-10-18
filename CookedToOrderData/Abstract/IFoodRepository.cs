@@ -8,6 +8,6 @@ namespace CookedToOrderData.Abstract
 {
     public interface IFoodRepository:IRepository<Food>
     {
-        Task<IEnumerable<Food>> GetAllFoodsAsync(FoodParameters foodParameters);
+        Task<PagedList<Food>> GetAllFoodsAsync(FoodParameters foodParameters);
     }
 }

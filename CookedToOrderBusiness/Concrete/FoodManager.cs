@@ -14,7 +14,7 @@ namespace CookedToOrderBusiness.Concrete
         private readonly IRepositoryManager _manager;
         private readonly IMapper _mapper;
         private readonly ILoggerService _logger;
-        public FoodManager(IRepositoryManager manager, IMapper mapper,ILoggerService logger)
+        public FoodManager(IRepositoryManager manager, IMapper mapper, ILoggerService logger)
         {
             _manager = manager;
             _mapper = mapper;
@@ -31,15 +31,17 @@ namespace CookedToOrderBusiness.Concrete
 
         public async Task DeleteOneBookAsync(int id)
         {
-            var entity =await GetOneBookByIdAndCheckExists(id);
+            var entity = await GetOneBookByIdAndCheckExists(id);
             _manager.Food.Delete(entity);
             await _manager.SaveAsync();
         }
 
-        public async Task<IEnumerable<FoodDto>> GetAllFoodsAsync(FoodParameters foodParameters)
+        public async Task<(IEnumerable<FoodDto> foodDto, MetaData MetaData)> GetAllFoodsAsync(FoodParameters foodParameters)
         {
-            var foods = await _manager.Food.GetAllFoodsAsync(foodParameters);
-            return _mapper.Map<IEnumerable<FoodDto>>(foods);
+            var foodsWithMetaData = await _manager.Food.GetAllFoodsAsync(foodParameters);
+            var foodsDto = _mapper.Map<IEnumerable<FoodDto>>(foodsWithMetaData);
+
+            return (foodsDto, foodsWithMetaData.MetaData);
         }
 
         public async Task<FoodDto> GetOneFoodByIdAsync(int id)
@@ -53,14 +55,14 @@ namespace CookedToOrderBusiness.Concrete
         {
             var entity = await GetOneBookByIdAndCheckExists(id);
 
-             entity = _mapper.Map<Food>(foodDto);
+            entity = _mapper.Map<Food>(foodDto);
             _manager.Food.Update(entity);
-           await _manager.SaveAsync();
+            await _manager.SaveAsync();
 
         }
         private async Task<Food> GetOneBookByIdAndCheckExists(int id)
         {
-            var entity =  _manager.Food.Get(f => f.FoodId == id);
+            var entity = _manager.Food.Get(f => f.FoodId == id);
             if (entity is null)
                 throw new FoodNotFoundException(id);
 

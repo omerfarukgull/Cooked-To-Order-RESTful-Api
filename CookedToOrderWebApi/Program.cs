@@ -1,4 +1,5 @@
 using CookedToOrderWebApi.Extensions;
+using Microsoft.AspNetCore.Cors.Infrastructure;
 using NLog;
 using Services.Abstract;
 using Services.Concrete;
@@ -27,12 +28,13 @@ namespace CookedToOrderWebApi
             builder.Services.ConfigureActionFilters();
             builder.Services.ConfigureLoggerService();
             builder.Services.AddAutoMapper(typeof(Program));
+            builder.Services.ConfigureCors();
 
             var app = builder.Build();
 
             var logger = app.Services.GetRequiredService<ILoggerService>();
             app.ConfigureExceptionHandler(logger);
-            // Configure the HTTP request pipeline.
+         
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
@@ -45,8 +47,9 @@ namespace CookedToOrderWebApi
 
             app.UseHttpsRedirection();
 
-            app.UseAuthorization();
+            app.UseCors("CorsPolicy");
 
+            app.UseAuthorization();
 
             app.MapControllers();
 

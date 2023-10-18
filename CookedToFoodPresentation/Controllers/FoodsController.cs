@@ -3,6 +3,7 @@ using CookedToOrderBusiness.Abstract;
 using CookedToOrderEntity.DataTransferObjects;
 using Entities.RequestParameters;
 using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
 using Presentation.ActionFilter;
 
 namespace CookedToFoodPresentation.Controllers
@@ -19,10 +20,12 @@ namespace CookedToFoodPresentation.Controllers
             _manager = manager;
         }
         [HttpGet]
-        public async Task<IActionResult> GetAllFoods([FromQuery]FoodParameters bookParameters)
+        public async Task<IActionResult> GetAllFoodsAsync([FromQuery]FoodParameters bookParameters)
         {
-            var foods = await _manager.FoodService.GetAllFoodsAsync(bookParameters);
-            return Ok(foods);
+            var pagedResult = await _manager.FoodService.GetAllFoodsAsync(bookParameters);
+
+            Response.Headers.Add("X-Pagination",JsonSerializer.Serialize(pagedResult.MetaData));
+            return Ok(pagedResult.foodDto);
         }
         [HttpGet("{id:int}")]
         public async Task<IActionResult> GetOneFoodById([FromRoute(Name = "id")] int id)

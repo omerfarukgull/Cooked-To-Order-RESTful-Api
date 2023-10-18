@@ -27,6 +27,18 @@ namespace CookedToOrderWebApi.Extensions
         }
         public static void ConfigureLoggerService(this IServiceCollection services) =>
             services.AddSingleton<ILoggerService, LoggerManager>();
+        public static void ConfigureCors(this IServiceCollection services)
+        {
+            services.AddCors(ops =>
+            {
+                ops.AddPolicy("CorsPolicy", builder =>
+                builder.AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .WithExposedHeaders("X-Pagination")
+                ) ;
+            });
+        }
 
     }
 }
