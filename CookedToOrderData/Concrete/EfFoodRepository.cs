@@ -18,6 +18,7 @@ namespace Repositories.Concrete
         {
             var foods = await GetList()
                         .FilterFoods(foodParameters.MinPrice, foodParameters.MaxPrice)
+                        .SearchFood(foodParameters.Search)
                         .OrderBy(f => f.FoodId)
                         .ToListAsync();
             return PagedList<Food>.ToPagedList(foods, foodParameters.PageNumber, foodParameters.PageSize);
