@@ -1,10 +1,9 @@
-﻿
-using CookedToFoodCore.DataAccess;
-using CookedToOrderEntity.Models;
+﻿using Core.DataAccess;
+using Entities.Models;
 using Entities.RequestParameters;
 
 
-namespace CookedToOrderData.Abstract
+namespace Repositories.Abstract
 {
     public interface IFoodRepository:IRepository<Food>
     {

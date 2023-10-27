@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CookedToOrderData.Abstract
+namespace Repositories.Abstract
 {
     public interface IRepositoryManager
     {

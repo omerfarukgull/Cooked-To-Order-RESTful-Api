@@ -1,12 +1,7 @@
-﻿using CookedToFoodCore.DataAccess;
-using CookedToOrderEntity.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Core.DataAccess;
+using Entities.Models;
 
-namespace CookedToOrderData.Abstract
+namespace Repositories.Abstract
 {
     public interface ICategoryRepository:IRepository<Category>
     {

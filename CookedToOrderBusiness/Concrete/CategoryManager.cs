@@ -1,13 +1,9 @@
-﻿using CookedToOrderBusiness.Abstract;
-using CookedToOrderData.Abstract;
-using CookedToOrderEntity.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Entities.Models;
+using Repositories.Abstract;
+using Services.Abstract;
 
-namespace CookedToOrderBusiness.Concrete
+
+namespace Services.Concrete
 {
     public class CategoryManager : ICategoryService
     {

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CookedToOrderEntity.DataTransferObjects
+namespace Entities.DataTransferObjects
 {
     public abstract record FoodDtoForManipulation
     {

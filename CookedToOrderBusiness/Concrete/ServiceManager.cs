@@ -1,14 +1,8 @@
 ﻿using AutoMapper;
-using CookedToOrderBusiness.Abstract;
-using CookedToOrderData.Abstract;
+using Repositories.Abstract;
 using Services.Abstract;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace CookedToOrderBusiness.Concrete
+namespace Services.Concrete
 {
     public class ServiceManager : IServiceManager
     {

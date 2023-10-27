@@ -1,0 +1,88 @@
+2023-10-27 11:42:12.6489 INFO {"ModelModel":"OnActionExecuting","Controller":"Foods","Action":"GetAllFoods","Id":null,"CreateAt":"2023-10-27T08:42:12.626249Z"}
+2023-10-27 11:42:12.8164 ERROR Something went wrong: Entities.Exceptions.PriceOutOfRangeBadRequestException: Maximum price should be less than 1000 and greater 10
+   at Services.Concrete.FoodManager.GetAllFoodsAsync(FoodParameters foodParameters) in C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderBusiness\Concrete\FoodManager.cs:line 42
+   at Presentation.Controllers.FoodsController.GetAllFoodsAsync(FoodParameters bookParameters) in C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodPresentation\Controllers\FoodsController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-10-27 11:42:27.0721 INFO {"ModelModel":"OnActionExecuting","Controller":"Foods","Action":"GetAllFoods","Id":null,"CreateAt":"2023-10-27T08:42:27.0720993Z"}
+2023-10-27 11:42:27.1124 ERROR Something went wrong: Entities.Exceptions.PriceOutOfRangeBadRequestException: Maximum price should be less than 1000 and greater 10
+   at Services.Concrete.FoodManager.GetAllFoodsAsync(FoodParameters foodParameters) in C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderBusiness\Concrete\FoodManager.cs:line 42
+   at Presentation.Controllers.FoodsController.GetAllFoodsAsync(FoodParameters bookParameters) in C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodPresentation\Controllers\FoodsController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-10-27 11:42:37.3609 INFO {"ModelModel":"OnActionExecuting","Controller":"Foods","Action":"GetOneFoodById","Id":"51","CreateAt":"2023-10-27T08:42:37.3609001Z"}
+2023-10-27 11:45:15.1626 INFO {"ModelModel":"OnActionExecuting","Controller":"Foods","Action":"GetAllFoods","Id":null,"CreateAt":"2023-10-27T08:45:15.1626523Z"}
+2023-10-27 11:45:15.2004 ERROR Something went wrong: Entities.Exceptions.PriceOutOfRangeBadRequestException: Maximum price should be less than 1000 and greater 10
+   at Services.Concrete.FoodManager.GetAllFoodsAsync(FoodParameters foodParameters) in C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderBusiness\Concrete\FoodManager.cs:line 42
+   at Presentation.Controllers.FoodsController.GetAllFoodsAsync(FoodParameters bookParameters) in C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodPresentation\Controllers\FoodsController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-10-27 11:45:58.0291 INFO {"ModelModel":"OnActionExecuting","Controller":"Foods","Action":"GetAllFoods","Id":null,"CreateAt":"2023-10-27T08:45:58.0290989Z"}
+2023-10-27 11:46:44.2987 ERROR Something went wrong: Entities.Exceptions.PriceOutOfRangeBadRequestException: Maximum price should be less than 1000 and greater 10
+   at Services.Concrete.FoodManager.GetAllFoodsAsync(FoodParameters foodParameters) in C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderBusiness\Concrete\FoodManager.cs:line 42
+   at Presentation.Controllers.FoodsController.GetAllFoodsAsync(FoodParameters bookParameters) in C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodPresentation\Controllers\FoodsController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-10-27 11:48:28.3856 INFO {"ModelModel":"OnActionExecuting","Controller":"Foods","Action":"GetAllFoods","Id":null,"CreateAt":"2023-10-27T08:48:28.3641672Z"}
+2023-10-27 11:48:47.4208 INFO {"ModelModel":"OnActionExecuting","Controller":"Foods","Action":"GetAllFoods","Id":null,"CreateAt":"2023-10-27T08:48:47.4208505Z"}
+2023-10-27 11:49:03.1496 INFO {"ModelModel":"OnActionExecuting","Controller":"Foods","Action":"GetAllFoods","Id":null,"CreateAt":"2023-10-27T08:49:03.1496496Z"}
+2023-10-27 11:50:27.4171 INFO {"ModelModel":"OnActionExecuting","Controller":"Foods","Action":"GetAllFoods","Id":null,"CreateAt":"2023-10-27T08:50:27.4170866Z"}
+2023-10-27 11:50:53.3204 INFO {"ModelModel":"OnActionExecuting","Controller":"Foods","Action":"GetAllFoods","Id":null,"CreateAt":"2023-10-27T08:50:53.3203661Z"}
+2023-10-27 11:51:16.1108 INFO {"ModelModel":"OnActionExecuting","Controller":"Foods","Action":"GetAllFoods","Id":null,"CreateAt":"2023-10-27T08:51:16.1107869Z"}
+2023-10-27 11:51:34.5590 INFO {"ModelModel":"OnActionExecuting","Controller":"Foods","Action":"GetAllFoods","Id":null,"CreateAt":"2023-10-27T08:51:34.5589874Z"}
+2023-10-27 11:51:48.5744 INFO {"ModelModel":"OnActionExecuting","Controller":"Foods","Action":"GetAllFoods","Id":null,"CreateAt":"2023-10-27T08:51:48.5743638Z"}
+2023-10-27 12:00:55.9503 INFO {"ModelModel":"OnActionExecuting","Controller":"Foods","Action":"GetAllFoods","Id":null,"CreateAt":"2023-10-27T09:00:55.9292741Z"}
+2023-10-27 12:01:02.3542 INFO {"ModelModel":"OnActionExecuting","Controller":"Foods","Action":"GetAllFoods","Id":null,"CreateAt":"2023-10-27T09:01:02.3541622Z"}
+2023-10-27 12:01:06.0360 INFO {"ModelModel":"OnActionExecuting","Controller":"Foods","Action":"GetAllFoods","Id":null,"CreateAt":"2023-10-27T09:01:06.0359925Z"}

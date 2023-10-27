@@ -1,13 +1,13 @@
-﻿using CookedToFoodCore.DataAccess.Ef;
-using CookedToOrderData.Abstract;
-using CookedToOrderEntity.Models;
+﻿using Core.DataAccess.Ef;
+using Entities.Models;
 using Entities.RequestParameters;
 using Microsoft.EntityFrameworkCore;
-using System.Linq.Expressions;
+using Repositories.Abstract;
 
-namespace CookedToOrderData.Concrete
+
+namespace Repositories.Concrete
 {
-    public class EfFoodRepository : EfCoreGenericRepository<Food>, IFoodRepository
+    public sealed class EfFoodRepository : EfCoreGenericRepository<Food>, IFoodRepository
     {
         public EfFoodRepository(FoodContext context) : base(context)
         {
@@ -17,6 +17,7 @@ namespace CookedToOrderData.Concrete
         public async Task<PagedList<Food>> GetAllFoodsAsync(FoodParameters foodParameters)
         {
             var foods = await GetList()
+                        .FilterFoods(foodParameters.MinPrice, foodParameters.MaxPrice)
                         .OrderBy(f => f.FoodId)
                         .ToListAsync();
             return PagedList<Food>.ToPagedList(foods, foodParameters.PageNumber, foodParameters.PageSize);

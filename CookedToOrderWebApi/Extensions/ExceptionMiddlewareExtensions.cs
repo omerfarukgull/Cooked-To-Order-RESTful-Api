@@ -1,8 +1,9 @@
-﻿using CookedToOrderEntity.Exceptions;
+﻿
 using Entities.ErrorModel;
+using Entities.Exceptions;
 using Microsoft.AspNetCore.Diagnostics;
 using Services.Abstract;
-using System.Net;
+
 
 namespace WebApi.Extensions
 {

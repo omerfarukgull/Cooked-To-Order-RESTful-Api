@@ -1,12 +1,10 @@
-using CookedToOrderWebApi.Extensions;
-using Microsoft.AspNetCore.Cors.Infrastructure;
+using Entities.Extensions;
 using NLog;
 using Services.Abstract;
-using Services.Concrete;
 using WebApi.Extensions;
 
-namespace CookedToOrderWebApi
-{
+namespace WebApi
+{ 
     public class Program
     {
         public static void Main(string[] args)
@@ -15,7 +13,7 @@ namespace CookedToOrderWebApi
 
             LogManager.LoadConfiguration(String.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
             builder.Services.AddControllers()
-                .AddApplicationPart(typeof(CookedToFoodPresentation.AssemblyRefence).Assembly);
+                .AddApplicationPart(typeof(Presentation.AssemblyRefence).Assembly);
 
 
 

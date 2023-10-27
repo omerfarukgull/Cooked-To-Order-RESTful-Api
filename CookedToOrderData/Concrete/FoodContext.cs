@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using CookedToOrderData.Concrete.Config;
-using CookedToOrderEntity.Models;
+using Repositories.Concrete.Config;
+using Entities.Models;
 
-namespace CookedToOrderData.Concrete
+namespace Repositories.Concrete
 {
     public class FoodContext :DbContext
     {

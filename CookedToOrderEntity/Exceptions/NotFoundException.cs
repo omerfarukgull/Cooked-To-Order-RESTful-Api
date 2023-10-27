@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CookedToOrderEntity.Exceptions
+namespace Entities.Exceptions
 {
     public abstract class NotFoundException : Exception
     {
@@ -12,4 +12,6 @@ namespace CookedToOrderEntity.Exceptions
         { 
         }
     }
+
+  
 }

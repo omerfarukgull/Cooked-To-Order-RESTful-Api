@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CookedToFoodCore.DataAccess.Ef
+namespace Core.DataAccess.Ef
 {
     public abstract class EfCoreGenericRepository<T> : IRepository<T> where T : class
     {

@@ -1,12 +1,11 @@
-﻿using CookedToFoodPresentation.ActionFilter;
-using CookedToOrderBusiness.Abstract;
-using CookedToOrderEntity.DataTransferObjects;
-using Entities.RequestParameters;
+﻿using Entities.RequestParameters;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
 using Presentation.ActionFilter;
+using Services.Abstract;
+using Entities.DataTransferObjects;
 
-namespace CookedToFoodPresentation.Controllers
+namespace Presentation.Controllers
 {
     [ServiceFilter(typeof(LogFiterAttribute))]
     [ApiController]

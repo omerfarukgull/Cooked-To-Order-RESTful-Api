@@ -1,13 +1,13 @@
 ﻿using AutoMapper;
-using CookedToOrderBusiness.Abstract;
-using CookedToOrderData.Abstract;
-using CookedToOrderEntity.DataTransferObjects;
-using CookedToOrderEntity.Exceptions;
-using CookedToOrderEntity.Models;
+using Entities.DataTransferObjects;
+using Entities.Exceptions;
+using Entities.Models;
 using Entities.RequestParameters;
+using Repositories.Abstract;
 using Services.Abstract;
 
-namespace CookedToOrderBusiness.Concrete
+
+namespace Services.Concrete
 {
     public class FoodManager : IFoodService
     {
@@ -38,6 +38,9 @@ namespace CookedToOrderBusiness.Concrete
 
         public async Task<(IEnumerable<FoodDto> foodDto, MetaData MetaData)> GetAllFoodsAsync(FoodParameters foodParameters)
         {
+            if (!foodParameters.ValidPriceRange)
+                throw new PriceOutOfRangeBadRequestException();
+
             var foodsWithMetaData = await _manager.Food.GetAllFoodsAsync(foodParameters);
             var foodsDto = _mapper.Map<IEnumerable<FoodDto>>(foodsWithMetaData);
 

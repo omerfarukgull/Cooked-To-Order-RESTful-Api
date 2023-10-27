@@ -1,8 +1,9 @@
-﻿using CookedToOrderData.Concrete;
+﻿
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
+using Repositories.Concrete;
 
-namespace CookedToOrderWebApi.ContextFactory
+namespace WebApi.ContextFactory
 {
     public class FoodContextFactory : IDesignTimeDbContextFactory<FoodContext>
     {

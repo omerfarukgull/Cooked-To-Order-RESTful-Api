@@ -27,3 +27,15 @@
 2023-10-18 19:37:17.9884 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
 2023-10-18 19:37:18.0028 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderWebApi\nlog.config
 2023-10-18 19:37:18.0170 Info Configuration initialized.
+2023-10-27 11:41:50.3996 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-10-27 11:41:50.4268 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-10-27 11:41:50.4409 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderWebApi\nlog.config
+2023-10-27 11:41:50.4533 Info Configuration initialized.
+2023-10-27 11:48:24.2011 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-10-27 11:48:24.2241 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-10-27 11:48:24.2368 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderWebApi\nlog.config
+2023-10-27 11:48:24.2489 Info Configuration initialized.
+2023-10-27 12:00:50.6654 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-10-27 12:00:50.6883 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-10-27 12:00:50.7048 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderWebApi\nlog.config
+2023-10-27 12:00:50.7169 Info Configuration initialized.

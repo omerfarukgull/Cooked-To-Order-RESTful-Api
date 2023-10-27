@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using CookedToOrderEntity.DataTransferObjects;
-using CookedToOrderEntity.Models;
+using Entities.DataTransferObjects;
+using Entities.Models;
 
-namespace CookedToOrderWebApi.Utilities.AutoMapper
+namespace Entities.Utilities.AutoMapper
 {
     public class MappingProfile : Profile
     {

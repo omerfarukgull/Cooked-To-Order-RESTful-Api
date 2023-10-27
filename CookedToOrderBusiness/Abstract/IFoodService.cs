@@ -1,8 +1,8 @@
-﻿using CookedToOrderEntity.DataTransferObjects;
-using CookedToOrderEntity.Models;
+﻿
+using Entities.DataTransferObjects;
 using Entities.RequestParameters;
 
-namespace CookedToOrderBusiness.Abstract
+namespace Services.Abstract
 {
     public interface IFoodService
     {

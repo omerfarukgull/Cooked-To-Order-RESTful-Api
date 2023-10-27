@@ -1,13 +1,9 @@
-﻿using CookedToFoodCore.DataAccess.Ef;
-using CookedToOrderData.Abstract;
-using CookedToOrderEntity.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Core.DataAccess.Ef;
+using Entities.Models;
+using Repositories.Abstract;
 
-namespace CookedToOrderData.Concrete
+
+namespace Repositories.Concrete
 {
     public class EfCategoryRepository : EfCoreGenericRepository<Category>, ICategoryRepository
     {

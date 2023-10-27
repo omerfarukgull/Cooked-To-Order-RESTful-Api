@@ -1,14 +1,12 @@
-﻿using CookedToFoodPresentation.ActionFilter;
-using CookedToOrderBusiness.Abstract;
-using CookedToOrderBusiness.Concrete;
-using CookedToOrderData.Abstract;
-using CookedToOrderData.Concrete;
+﻿
 using Microsoft.EntityFrameworkCore;
 using Presentation.ActionFilter;
+using Repositories.Abstract;
+using Repositories.Concrete;
 using Services.Abstract;
 using Services.Concrete;
 
-namespace CookedToOrderWebApi.Extensions
+namespace Entities.Extensions
 {
     public static class ServicesExtensions
     {
