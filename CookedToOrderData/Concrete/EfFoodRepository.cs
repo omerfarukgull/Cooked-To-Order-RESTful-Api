@@ -3,7 +3,7 @@ using Entities.Models;
 using Entities.RequestParameters;
 using Microsoft.EntityFrameworkCore;
 using Repositories.Abstract;
-
+using Repositories.Concrete.Extensions;
 
 namespace Repositories.Concrete
 {
@@ -19,7 +19,7 @@ namespace Repositories.Concrete
             var foods = await GetList()
                         .FilterFoods(foodParameters.MinPrice, foodParameters.MaxPrice)
                         .SearchFood(foodParameters.Search)
-                        .OrderBy(f => f.FoodId)
+                        .Sort(foodParameters.OrderBy)
                         .ToListAsync();
             return PagedList<Food>.ToPagedList(foods, foodParameters.PageNumber, foodParameters.PageSize);
         }

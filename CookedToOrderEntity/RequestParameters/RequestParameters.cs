@@ -17,5 +17,7 @@ namespace Entities.RequestParameters
             get { return _pageSize; }
             set { _pageSize = value > maxPageSize ? maxPageSize : value; }
         }
+
+        public String? OrderBy { get; set; }
     }
 }

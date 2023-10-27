@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "kOL6bAhl6TByDb4bxQNvZo0Tzo1FzoukgJpcqkCLa+fmICCVu7sTHulaqmpE7duraTW7EskuwDooU2qEo3zkLg==",
+  "dgSpecHash": "H2yxqWQg7LCq0FnYV8PYsV4guLAlqrqacV25J1Iq1mXOMjSvh4PVNVGCf8FyeGwLFVzv9wBCbJIMW0AjPXds5g==",
   "success": true,
   "projectFilePath": "C:\\Users\\omerf\\OneDrive\\Masaüstü\\CookedToOrder\\CookedToOrderBusiness\\Services.csproj",
   "expectedPackageFiles": [
@@ -49,6 +49,7 @@
     "C:\\Users\\omerf\\.nuget\\packages\\system.globalization\\4.3.0\\system.globalization.4.3.0.nupkg.sha512",
     "C:\\Users\\omerf\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.21.0\\system.identitymodel.tokens.jwt.6.21.0.nupkg.sha512",
     "C:\\Users\\omerf\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
+    "C:\\Users\\omerf\\.nuget\\packages\\system.linq.dynamic.core\\1.3.5\\system.linq.dynamic.core.1.3.5.nupkg.sha512",
     "C:\\Users\\omerf\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\omerf\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
     "C:\\Users\\omerf\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",

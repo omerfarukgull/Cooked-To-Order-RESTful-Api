@@ -100,3 +100,4 @@ C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderWebApi\obj\Debug\n
 C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderWebApi\obj\Debug\net6.0\WebApi.genruntimeconfig.cache
 C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderWebApi\obj\Debug\net6.0\ref\WebApi.dll
 C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderWebApi\obj\Debug\net6.0\WebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderWebApi\bin\Debug\net6.0\System.Linq.Dynamic.Core.dll
