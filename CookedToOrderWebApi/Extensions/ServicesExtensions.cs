@@ -1,4 +1,5 @@
 ﻿
+using Entities.DataTransferObjects;
 using Microsoft.EntityFrameworkCore;
 using Presentation.ActionFilter;
 using Repositories.Abstract;
@@ -36,6 +37,10 @@ namespace Entities.Extensions
                 .WithExposedHeaders("X-Pagination")
                 ) ;
             });
+        }
+        public static void ConfigureDataShaper(this IServiceCollection services) 
+        {
+            services.AddScoped<IDataShaper<FoodDto>, DataShaper<FoodDto>>();
         }
 
     }

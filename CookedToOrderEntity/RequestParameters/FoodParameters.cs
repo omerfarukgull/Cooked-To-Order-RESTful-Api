@@ -12,7 +12,7 @@
         // Bize OrderBy için bir değer gelmez ise otomatik bir değer ile sıralamasını istiyoruz
         public FoodParameters()
         {
-            OrderBy = "id";
+            OrderBy = "FoodId";
         }
     }
 }

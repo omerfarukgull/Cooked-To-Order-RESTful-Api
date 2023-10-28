@@ -27,6 +27,7 @@ namespace WebApi
             builder.Services.ConfigureLoggerService();
             builder.Services.AddAutoMapper(typeof(Program));
             builder.Services.ConfigureCors();
+            builder.Services.ConfigureDataShaper();
 
             var app = builder.Build();
 

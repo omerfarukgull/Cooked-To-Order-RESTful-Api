@@ -5,7 +5,7 @@ using Entities.Models;
 using Entities.RequestParameters;
 using Repositories.Abstract;
 using Services.Abstract;
-
+using System.Dynamic;
 
 namespace Services.Concrete
 {
@@ -14,11 +14,13 @@ namespace Services.Concrete
         private readonly IRepositoryManager _manager;
         private readonly IMapper _mapper;
         private readonly ILoggerService _logger;
-        public FoodManager(IRepositoryManager manager, IMapper mapper, ILoggerService logger)
+        private readonly IDataShaper<FoodDto> _shaper;
+        public FoodManager(IRepositoryManager manager, IMapper mapper, ILoggerService logger, IDataShaper<FoodDto> shaper)
         {
             _manager = manager;
             _mapper = mapper;
             _logger = logger;
+            _shaper = shaper;
         }
 
         public async Task<FoodDto> CreateOneBookAsync(FoodDtoForInsertion foodDto)
@@ -36,15 +38,16 @@ namespace Services.Concrete
             await _manager.SaveAsync();
         }
 
-        public async Task<(IEnumerable<FoodDto> foodDto, MetaData MetaData)> GetAllFoodsAsync(FoodParameters foodParameters)
+        public async Task<(IEnumerable<ExpandoObject> foods, MetaData metaData)> GetAllFoodsAsync(FoodParameters foodParameters)
         {
             if (!foodParameters.ValidPriceRange)
                 throw new PriceOutOfRangeBadRequestException();
 
             var foodsWithMetaData = await _manager.Food.GetAllFoodsAsync(foodParameters);
             var foodsDto = _mapper.Map<IEnumerable<FoodDto>>(foodsWithMetaData);
+            var shapedData = _shaper.ShapeDate(foodsDto, foodParameters.Fields);
 
-            return (foodsDto, foodsWithMetaData.MetaData);
+            return (foods : shapedData, metaData : foodsWithMetaData.MetaData);
         }
 
         public async Task<FoodDto> GetOneFoodByIdAsync(int id)

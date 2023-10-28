@@ -23,8 +23,8 @@ namespace Presentation.Controllers
         {
             var pagedResult = await _manager.FoodService.GetAllFoodsAsync(bookParameters);
 
-            Response.Headers.Add("X-Pagination",JsonSerializer.Serialize(pagedResult.MetaData));
-            return Ok(pagedResult.foodDto);
+            Response.Headers.Add("X-Pagination",JsonSerializer.Serialize(pagedResult.metaData));
+            return Ok(pagedResult.foods);
         }
         [HttpGet("{id:int}")]
         public async Task<IActionResult> GetOneFoodById([FromRoute(Name = "id")] int id)
