@@ -4,9 +4,9 @@ Bu proje, bir butik otel müşterilerinin otel odalarından yemek siparişi vere
 
 🟠Proje hakkında özet bilgi :
 
-• Entity Framework, Software Architecture, NLog, Global Error Handling, Auto Mapper, Validation, Action Filter projemde tamamlanan kısımsınlar.
+• Entity Framework, Software Architecture, NLog, Global Error Handling, Auto Mapper, Validation, Action Filter, sayfalama, filtreleme, sıralama ve içerik pazarlığı projemde tamamlanan kısımsınlar.
 
-• Gelişmiş ve olgunlaşmış bir Web Api için içinde barındırdığı sayfalama, filtreleme, sıralama ve içerik pazarlığı olmak üzere Api güvenliği, ön belleğe alma, hız sınırlandırma gibi pek çok yapıyı içinde barındıran ileri düzey bir Web Api geliştirme aşamasında.
+• Gelişmiş ve olgunlaşmış bir Web Api için içinde barındırdığı Api güvenliği, ön belleğe alma, hız sınırlandırma gibi pek çok yapıyı içinde barındıran ileri düzey bir Web Api geliştirme aşamasında.
 
 • Web api için Asp.Net Core 7.0 Versionunu kullanarak Katmanlı mimari üzerinde projeyi oluşturup, geliştirdim.
 
