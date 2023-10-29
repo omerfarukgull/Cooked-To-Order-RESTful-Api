@@ -19,10 +19,10 @@ Bu proje, bir butik otel müşterilerinin otel odalarından yemek siparişi vere
 • Bu projede SQL veri tabanı için CodeFirst yaklaşımı ile EF Core'un sağlamış olduğu yapıları kullanarak veri tabanı işlemlerimi tamamlamış oldum.
 
 📌 2 - Yazılım Mimarisi (Software Architecture) 
-• N-tier Architecture mimarisi ile 'Entities', 'Presentation', 'Repositories', 'Services', 'Core', 'Api' katmanları ile uygulamanın yönetimi geliştirdim.
+• N-tier Architecture mimarisi ile 'Entities', 'Presentation', 'Repositories', 'Services', 'Core', 'Api' katmanları ile uygulamanın yönetimi gerçekleştirikmektedir.
 
 📌 3 - NLog Uygulaması (NLog Implementation) 
-• NLog kütüphanesini mimariye dahil ederek loglama işlemlerini gerçekleştirdim.
+• NLog kütüphanesini mimariye dahil ederek loglama işlemlerini gerçekleştirikmektedir.
 
 📌 4 - Global Hata Yönetimi (Global Error Handling) 
 • Hatalı istek(Request) atıldığında Global Hata yönetimi ile yazmış olduğumuz Custom Error Messages bize göstererek çözüme daha hızlı ulaşmamızı sağlamaktadır.
@@ -35,6 +35,19 @@ Bu proje, bir butik otel müşterilerinin otel odalarından yemek siparişi vere
 • Client ile Server arasında data alışverişi gerçekleşeceği zaman bu veriler üzerinde tanımladığımız kuralların geçerli olup olmadığını kontrol etmemize olanak sağlar.
 
 📌 9 - Eylem Filtreleri (Action Filters) 
-• Action Filter yapısı kullanarak global seviye de Log alma ve action seviyesinde Validation işlemlerini geçekleştirdim.
+• Action Filter yapısı kullanarak global seviye de Log alma ve action seviyesinde Validation işlemlerini gerçekleştirikmektedir.
 
+📌 10 - Sayfalama (Pagination) 
+• API ile verilerimizi listeleme yaparken çok fazla veri listelemesi gerçekleşebilir. Burada da isteklerin uzun sürmesi, yüklenmemesi gibi sorunlar karşımıza çıkabilir. Bu verilerimizi gösterirken sayfalama özelliklerini ekleyerek listeleme gerçekleştirikmektedir. 
 
+📌 11 - Filtreleme (Filtering)
+• Yalın olarak Filtreleme bir takım kriterlere bağlı olarak sonuçların getirilmesini sağlayan bir mekanizmadır. Query String yada Route ifadeleri ile gerçekleştirikmektedir.
+
+ 📌 12 - Arama (Searching) 
+ • Arama bir terim ya da anahtar değer yardımıyla uygulama içerisindeki en alakalı sonuçları döndürmek üzere uygulanan bir işlevdir.
+
+ 📌 13 - Sıralama (Sorting) 
+ • Sorting query string parametreleri yardımıyla tercih edilen bir yolla sonuçların sıralanması işlevidir. OrderBy query string ile DESC yada ASC olarak sıralama yapılabilir.
+
+ 📌 14 - Veri Şekillendirme (Data Shaping)
+ • Data Shaping API tüketicisinin, sorgu dizesi aracılığıyla talep ettiği nesnenin alanlarını seçerek sonuç setini şekillendirmesini sağlar.
