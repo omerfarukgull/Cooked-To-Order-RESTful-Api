@@ -19,7 +19,8 @@ namespace Presentation.Controllers
         {
             _manager = manager;
         }
-        [Authorize]
+
+        [Authorize(Roles ="User, Admin")]
         [HttpGet(Name = "GetAllFoodsAsync")]
         public async Task<IActionResult> GetAllFoodsAsync([FromQuery]FoodParameters bookParameters)
         {
@@ -28,12 +29,18 @@ namespace Presentation.Controllers
             Response.Headers.Add("X-Pagination",JsonSerializer.Serialize(pagedResult.metaData));
             return Ok(pagedResult.foods);
         }
+
+
+        [Authorize(Roles = "User, Admin")]
         [HttpGet("{id:int}")]
         public async Task<IActionResult> GetOneFoodById([FromRoute(Name = "id")] int id)
         {
             var food = await _manager.FoodService.GetOneFoodByIdAsync(id);
             return Ok(food);
         }
+
+
+        [Authorize(Roles = "Admin")]
         [ServiceFilter(typeof(ValidationFilterAttribute))]
         [HttpPost]
         public async Task<IActionResult> CreateOneFoodAsync([FromBody] FoodDtoForInsertion foodDto)
@@ -46,6 +53,9 @@ namespace Presentation.Controllers
             var food = await _manager.FoodService.CreateOneBookAsync(foodDto);
             return StatusCode(201, food);
         }
+
+
+        [Authorize(Roles = "Admin")]
         [ServiceFilter(typeof(ValidationFilterAttribute))]
         [HttpPut("{id:int}")]
         public async Task<IActionResult> UpdateOneFoodAsync([FromRoute(Name = "id")] int id, [FromBody] FoodDtoForUpdate foodDto)
@@ -53,6 +63,9 @@ namespace Presentation.Controllers
             await _manager.FoodService.UpdateOneBookAsync(id, foodDto);
             return NoContent(); //204
         }
+
+
+        [Authorize(Roles = "Admin")]
         [HttpDelete("{id:int}")]
         public async Task<IActionResult> DeletOneFoodAsync([FromRoute(Name = "id")]int id)
         {
