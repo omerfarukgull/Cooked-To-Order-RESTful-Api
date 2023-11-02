@@ -1,5 +1,7 @@
 ﻿
 using Entities.DataTransferObjects;
+using Entities.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Presentation.ActionFilter;
 using Repositories.Abstract;
@@ -17,15 +19,19 @@ namespace Entities.Extensions
         }
         public static void ConfigureRepositoryManager(this IServiceCollection services) =>
             services.AddScoped<IRepositoryManager , RepositoryManager>();
+
         public static void ConfigureServiceManager(this IServiceCollection services) =>
             services.AddScoped<IServiceManager, ServiceManager>();
+
         public static void ConfigureActionFilters(this IServiceCollection services)
         {
             services.AddScoped<ValidationFilterAttribute>();
             services.AddSingleton<LogFiterAttribute>();
         }
+
         public static void ConfigureLoggerService(this IServiceCollection services) =>
             services.AddSingleton<ILoggerService, LoggerManager>();
+
         public static void ConfigureCors(this IServiceCollection services)
         {
             services.AddCors(ops =>
@@ -38,9 +44,26 @@ namespace Entities.Extensions
                 ) ;
             });
         }
+
         public static void ConfigureDataShaper(this IServiceCollection services) 
         {
             services.AddScoped<IDataShaper<FoodDto>, DataShaper<FoodDto>>();
+        }
+
+        public static void ConfigureIdentity(this IServiceCollection services)
+        {
+            var builder = services.AddIdentity<User, IdentityRole>(opts =>
+            {
+                opts.User.RequireUniqueEmail = true;
+
+                opts.Password.RequireDigit = true;
+                opts.Password.RequireLowercase = false;
+                opts.Password.RequireUppercase = false;
+                opts.Password.RequireNonAlphanumeric = false;
+                opts.Password.RequiredLength = 6;
+            })
+                .AddEntityFrameworkStores<FoodContext>()
+                .AddDefaultTokenProviders();
         }
 
     }

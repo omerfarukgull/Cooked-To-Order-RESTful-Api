@@ -15,7 +15,7 @@ namespace WebApi.ContextFactory
                 .Build();
             var builder = new DbContextOptionsBuilder<FoodContext>()
                .UseSqlServer(configuration.GetConnectionString("sqlConnection"),
-               prj => prj.MigrationsAssembly("CookedToOrderWebApi"));
+               prj => prj.MigrationsAssembly("WebApi"));
             return new FoodContext(builder.Options);
         }
     }

@@ -1,10 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Repositories.Concrete.Config;
 using Entities.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using System.Reflection;
 
 namespace Repositories.Concrete
 {
-    public class FoodContext :DbContext
+    public class FoodContext :IdentityDbContext<User>
     {
         public FoodContext(DbContextOptions options):base(options) { }
         
@@ -13,8 +15,13 @@ namespace Repositories.Concrete
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration(new FoodConfig());
-            modelBuilder.ApplyConfiguration(new CategoryConfig());
+            base.OnModelCreating(modelBuilder);
+
+
+            //modelBuilder.ApplyConfiguration(new FoodConfig());
+            //modelBuilder.ApplyConfiguration(new CategoryConfig());
+            //modelBuilder.ApplyConfiguration(new RoleConfiguration());
+            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly()); // IEntityTypeConfiguration ifadesini, kullanan class burada toplanıyor
         }
     }
 }
