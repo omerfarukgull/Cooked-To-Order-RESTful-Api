@@ -11,6 +11,7 @@ namespace Entities.Utilities.AutoMapper
             CreateMap<FoodDtoForUpdate, Food>();
             CreateMap<Food, FoodDto>();
             CreateMap<FoodDtoForManipulation, Food>();
+            CreateMap<UserForRegistrationDto, User>();
         }
     }
 }

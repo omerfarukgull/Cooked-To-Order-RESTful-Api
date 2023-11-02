@@ -10,5 +10,6 @@ namespace Services.Abstract
     {
         IFoodService FoodService { get; }
         ICategoryService CategoryService { get; }
+        IAuthenticationService AuthenticationService { get; }
     }
 }
