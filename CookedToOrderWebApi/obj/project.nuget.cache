@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3Dbrj59bjxbdQ3VCfBQGsQ5AJcKJ0LiGCkD8l5/yJMSEGxzne1JR+SjQoK/28xfzRHI5u1Dy3T/SV+235GFF3A==",
+  "dgSpecHash": "eyqrzEeuAfd0HIxUzeRGrMoKJ7HRruc+5wMLWSP99NseS6SLQjn9+AbuCtrltN4xMvXcJ2x3Nq1HqrwpNFRNfw==",
   "success": true,
   "projectFilePath": "C:\\Users\\omerf\\OneDrive\\Masaüstü\\CookedToOrder\\CookedToOrderWebApi\\WebApi.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\omerf\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\omerf\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\omerf\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
+    "C:\\Users\\omerf\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.24\\microsoft.aspnetcore.authentication.jwtbearer.6.0.24.nupkg.sha512",
     "C:\\Users\\omerf\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.2.0\\microsoft.aspnetcore.authorization.2.2.0.nupkg.sha512",
     "C:\\Users\\omerf\\.nuget\\packages\\microsoft.aspnetcore.authorization.policy\\2.2.0\\microsoft.aspnetcore.authorization.policy.2.2.0.nupkg.sha512",
     "C:\\Users\\omerf\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.24\\microsoft.aspnetcore.cryptography.internal.6.0.24.nupkg.sha512",

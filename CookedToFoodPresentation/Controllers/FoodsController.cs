@@ -4,6 +4,7 @@ using System.Text.Json;
 using Presentation.ActionFilter;
 using Services.Abstract;
 using Entities.DataTransferObjects;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Presentation.Controllers
 {
@@ -18,7 +19,8 @@ namespace Presentation.Controllers
         {
             _manager = manager;
         }
-        [HttpGet]
+        [Authorize]
+        [HttpGet(Name = "GetAllFoodsAsync")]
         public async Task<IActionResult> GetAllFoodsAsync([FromQuery]FoodParameters bookParameters)
         {
             var pagedResult = await _manager.FoodService.GetAllFoodsAsync(bookParameters);

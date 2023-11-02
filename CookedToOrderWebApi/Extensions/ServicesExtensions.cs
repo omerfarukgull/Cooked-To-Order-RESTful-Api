@@ -1,6 +1,7 @@
 ﻿
 using Entities.DataTransferObjects;
 using Entities.Models;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Presentation.ActionFilter;
@@ -8,6 +9,8 @@ using Repositories.Abstract;
 using Repositories.Concrete;
 using Services.Abstract;
 using Services.Concrete;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace Entities.Extensions
 {
@@ -64,6 +67,34 @@ namespace Entities.Extensions
             })
                 .AddEntityFrameworkStores<FoodContext>()
                 .AddDefaultTokenProviders();
+        }
+
+        public static void ConfigureJWT(this IServiceCollection services,IConfiguration configuration)
+        {
+            var jwtSettings = configuration.GetSection("JwtSettings"); //appsetting  JwtSettings verilerini
+            var secretKey = jwtSettings["secretKey"];
+
+            services.AddAuthentication(opt =>
+            {
+                opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                opt.DefaultChallengeScheme= JwtBearerDefaults.AuthenticationScheme; //Başarısız kullancı girişinde devreye girecek doğrulama düzeni
+            })
+                .AddJwtBearer(opts =>
+                {
+                    opts.TokenValidationParameters = new TokenValidationParameters//JWT kimlik doğrulama düzeninin yapılandırma ayarlarını içeren bir nesnedir. JWT tokenlarının doğrulama parametrelerini belirlemek için kullanılır.
+                    {
+                        //JWT'nin Validate + "issuer,Audience,LifetimeIssuerSigningKey" alanların doğrulanıp doğrulanmayacağını belirtir. 
+                        ValidateIssuer = true,
+                        ValidateAudience = true,
+                        ValidateLifetime = true,
+                        ValidateIssuerSigningKey = true,
+                        // JWT'nin doğrulanırken, bu yayımcı adı ile eşleşmelidir.
+                        ValidIssuer = jwtSettings["validIssuer"],
+                        ValidAudience = jwtSettings["validAudience"],
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey))
+                    };
+                });
+
         }
 
     }
