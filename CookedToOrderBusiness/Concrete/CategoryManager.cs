@@ -1,7 +1,8 @@
-﻿using Entities.Models;
+﻿using Entities.Exceptions;
+using Entities.Models;
+using Microsoft.EntityFrameworkCore;
 using Repositories.Abstract;
 using Services.Abstract;
-
 
 namespace Services.Concrete
 {
@@ -12,29 +13,46 @@ namespace Services.Concrete
         {
             _manager = manager;
         }
-        public Task<Category> CreateOneBookAsync(Category category)
+
+        public async Task<Category> CreateOneCategoryAsync(Category category)
         {
-            throw new NotImplementedException();
+            _manager.Category.Create(category);
+            await _manager.SaveAsync();
+            return category;
         }
 
-        public Task DeleteOneBookAsync(int id)
+        public async Task DeleteOneCategoryAsync(int id)
         {
-            throw new NotImplementedException();
+            var entity = await GetOneCategoryByIdAndCheckExists(id);
+            _manager.Category.Delete(entity);
+            await _manager.SaveAsync();
         }
 
-        public Task<List<Category>> GetFoodListAsync()
+        public async Task<IEnumerable<Category>> GetAllCategoriesAsync()
         {
-            throw new NotImplementedException();
+            return await _manager.Category.GetList()
+                  .OrderBy(c => c.CategoryName).ToListAsync();
         }
 
-        public Task<Category> GetOneFoodByIdAsync()
+        public async Task<Category> GetOneCategoryByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            var category = await GetOneCategoryByIdAndCheckExists(id);
+            return category;
         }
 
-        public Task UpdateOneBookAsync(int id, Category category)
+        public async Task UpdateOneCategoryAsync(int id, Category category)
         {
-            throw new NotImplementedException();
+            var entity = await GetOneCategoryByIdAndCheckExists(id);
+            _manager.Category.Update(category);
+            await _manager.SaveAsync();
+        }
+        private async Task<Category> GetOneCategoryByIdAndCheckExists(int id)
+        {
+            var entity = _manager.Category.Get(c => c.CategoryId == id);
+            if (entity is null)
+                throw new CategoryNotFoundException(id);
+
+            return entity;
         }
     }
 }

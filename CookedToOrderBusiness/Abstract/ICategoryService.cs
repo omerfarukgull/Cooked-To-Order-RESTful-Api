@@ -9,10 +9,10 @@ namespace Services.Abstract
 {
     public interface ICategoryService
     {
-        Task<List<Category>> GetFoodListAsync();
-        Task<Category> GetOneFoodByIdAsync();
-        Task<Category> CreateOneBookAsync(Category category);
-        Task UpdateOneBookAsync(int id, Category category);
-        Task DeleteOneBookAsync(int id);
+        Task<IEnumerable<Category>> GetAllCategoriesAsync();
+        Task<Category> GetOneCategoryByIdAsync(int id);
+        Task<Category> CreateOneCategoryAsync(Category category);
+        Task UpdateOneCategoryAsync(int id, Category category);
+        Task DeleteOneCategoryAsync(int id);
     }
 }

@@ -50,7 +50,7 @@ namespace Presentation.Controllers
             //    if (!ModelState.IsValid)
             //        return UnprocessableEntity(ModelState); Bu kod satırını oluşturdumuz  ValidationFilterAttribute ile action çalışırken kontrol ediyoruz
 
-            var food = await _manager.FoodService.CreateOneBookAsync(foodDto);
+            var food = await _manager.FoodService.CreateOneFoodAsync(foodDto);
             return StatusCode(201, food);
         }
 
@@ -60,7 +60,7 @@ namespace Presentation.Controllers
         [HttpPut("{id:int}")]
         public async Task<IActionResult> UpdateOneFoodAsync([FromRoute(Name = "id")] int id, [FromBody] FoodDtoForUpdate foodDto)
         {
-            await _manager.FoodService.UpdateOneBookAsync(id, foodDto);
+            await _manager.FoodService.UpdateOneFoodAsync(id, foodDto);
             return NoContent(); //204
         }
 
@@ -69,7 +69,7 @@ namespace Presentation.Controllers
         [HttpDelete("{id:int}")]
         public async Task<IActionResult> DeletOneFoodAsync([FromRoute(Name = "id")]int id)
         {
-            await _manager.FoodService.DeleteOneBookAsync(id);
+            await _manager.FoodService.DeleteOneFoodAsync(id);
             return NoContent(); 
         }
     }

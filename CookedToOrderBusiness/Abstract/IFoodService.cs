@@ -9,8 +9,8 @@ namespace Services.Abstract
     {
         Task<(IEnumerable<ExpandoObject> foods,MetaData metaData)> GetAllFoodsAsync(FoodParameters foodParameters);
         Task<FoodDto> GetOneFoodByIdAsync(int id);
-        Task<FoodDto> CreateOneBookAsync(FoodDtoForInsertion foodDto);
-        Task UpdateOneBookAsync(int id, FoodDtoForUpdate foodDto);
-        Task DeleteOneBookAsync(int id);
+        Task<FoodDto> CreateOneFoodAsync(FoodDtoForInsertion foodDto);
+        Task UpdateOneFoodAsync(int id, FoodDtoForUpdate foodDto);
+        Task DeleteOneFoodAsync(int id);
     }
 }

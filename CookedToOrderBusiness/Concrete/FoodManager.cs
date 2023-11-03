@@ -23,7 +23,7 @@ namespace Services.Concrete
             _shaper = shaper;
         }
 
-        public async Task<FoodDto> CreateOneBookAsync(FoodDtoForInsertion foodDto)
+        public async Task<FoodDto> CreateOneFoodAsync(FoodDtoForInsertion foodDto)
         {
             var entity = _mapper.Map<Food>(foodDto);
             _manager.Food.Create(entity);
@@ -31,9 +31,9 @@ namespace Services.Concrete
             return _mapper.Map<FoodDto>(entity);
         }
 
-        public async Task DeleteOneBookAsync(int id)
+        public async Task DeleteOneFoodAsync(int id)
         {
-            var entity = await GetOneBookByIdAndCheckExists(id);
+            var entity = await GetOneFoodByIdAndCheckExists(id);
             _manager.Food.Delete(entity);
             await _manager.SaveAsync();
         }
@@ -52,21 +52,21 @@ namespace Services.Concrete
 
         public async Task<FoodDto> GetOneFoodByIdAsync(int id)
         {
-            var food = await GetOneBookByIdAndCheckExists(id);
+            var food = await GetOneFoodByIdAndCheckExists(id);
 
             return _mapper.Map<FoodDto>(food);
         }
 
-        public async Task UpdateOneBookAsync(int id, FoodDtoForUpdate foodDto)
+        public async Task UpdateOneFoodAsync(int id, FoodDtoForUpdate foodDto)
         {
-            var entity = await GetOneBookByIdAndCheckExists(id);
+            var entity = await GetOneFoodByIdAndCheckExists(id);
 
             entity = _mapper.Map<Food>(foodDto);
             _manager.Food.Update(entity);
             await _manager.SaveAsync();
 
         }
-        private async Task<Food> GetOneBookByIdAndCheckExists(int id)
+        private async Task<Food> GetOneFoodByIdAndCheckExists(int id)
         {
             var entity = _manager.Food.Get(f => f.FoodId == id);
             if (entity is null)
