@@ -20,7 +20,7 @@ namespace Presentation.Controllers
             _manager = manager;
         }
 
-        [Authorize(Roles ="User, Admin")]
+        [Authorize]
         [HttpGet(Name = "GetAllFoodsAsync")]
         public async Task<IActionResult> GetAllFoodsAsync([FromQuery]FoodParameters bookParameters)
         {
@@ -31,7 +31,7 @@ namespace Presentation.Controllers
         }
 
 
-        [Authorize(Roles = "User, Admin")]
+        [Authorize]
         [HttpGet("{id:int}")]
         public async Task<IActionResult> GetOneFoodById([FromRoute(Name = "id")] int id)
         {

@@ -2,11 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Presentation.ActionFilter;
 using Services.Abstract;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Presentation.Controllers
 {
@@ -25,7 +20,7 @@ namespace Presentation.Controllers
         public async Task<IActionResult> RegisterUser([FromBody] UserForRegistrationDto userForRegistration)
         {
             var result = await _service.AuthenticationService.RegisterUser(userForRegistration);
-            if (!result.Succeeded) 
+            if (!result.Succeeded)
             {
                 foreach (var error in result.Errors)
                 {
@@ -42,10 +37,18 @@ namespace Presentation.Controllers
             if (!await _service.AuthenticationService.ValidateUser(user))
                 return Unauthorized(); //401
 
-            return Ok(new
-            {
-                Token = await _service.AuthenticationService.CreateToken()
-            });
+            var tokenDto = await _service.AuthenticationService.CreateToken(true);
+
+            return Ok(tokenDto);
+        }
+        [HttpPost("refresh")]
+        [ServiceFilter(typeof(ValidationFilterAttribute))]
+        public async Task<IActionResult> Refresh([FromBody] TokenDto tokenDto)
+        {
+            var tokenDtoToReturn = await _service
+                .AuthenticationService
+                .RefreshToken(tokenDto);
+            return Ok(tokenDtoToReturn);
         }
     }
 }

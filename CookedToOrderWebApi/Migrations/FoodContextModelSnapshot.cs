@@ -643,6 +643,12 @@ namespace WebApi.Migrations
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
 
+                    b.Property<string>("RefreshToken")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("RefreshTokenExpriyTime")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
 
@@ -695,15 +701,15 @@ namespace WebApi.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "1eaaed38-a6cc-4bd0-8b04-6b4f815b9d14",
-                            ConcurrencyStamp = "29853fcf-0ec2-40d6-bfc9-696ffe6a924d",
+                            Id = "8a97f4a3-e465-4679-9871-7c6ca2539d24",
+                            ConcurrencyStamp = "71494e75-cb29-4ec9-9698-e44194b9d7f1",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "361e8eee-556c-46b0-8e08-fc05c73c9620",
-                            ConcurrencyStamp = "e158159b-8306-4165-b4a9-a3670ad8577f",
+                            Id = "c5d5676c-3c86-4a83-a8c5-d97df67c903d",
+                            ConcurrencyStamp = "8d371a01-733e-45bf-9363-9cb0617d7285",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });
