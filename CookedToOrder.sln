@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repositories", "CookedToOrderData\Repositories.csproj", "{ECA55CEC-2D1C-4447-82D5-3FD1454E7259}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repositories", "Repositories\Repositories.csproj", "{ECA55CEC-2D1C-4447-82D5-3FD1454E7259}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "CookedToOrderEntity\Entities.csproj", "{3329F1C2-7652-45A3-83B5-24A763CE88C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{3329F1C2-7652-45A3-83B5-24A763CE88C6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "CookedToOrderBusiness\Services.csproj", "{A8EC01D5-5308-41CF-B08F-E8C0FBE3B22D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Services.csproj", "{A8EC01D5-5308-41CF-B08F-E8C0FBE3B22D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "CookedToOrderWebApi\WebApi.csproj", "{ACA58E2D-B789-4EE8-B236-C44192FC1372}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "WebApi\WebApi.csproj", "{ACA58E2D-B789-4EE8-B236-C44192FC1372}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presentation", "CookedToFoodPresentation\Presentation.csproj", "{A88D8A31-1C2A-4889-A6B5-A2D805E196C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presentation", "Presentation\Presentation.csproj", "{A88D8A31-1C2A-4889-A6B5-A2D805E196C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
