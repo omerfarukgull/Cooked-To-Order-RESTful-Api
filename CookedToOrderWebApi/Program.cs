@@ -13,7 +13,9 @@ namespace WebApi
 
             LogManager.LoadConfiguration(String.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
             builder.Services.AddControllers()
-                .AddApplicationPart(typeof(Presentation.AssemblyRefence).Assembly);
+                .AddApplicationPart(typeof(Presentation.AssemblyRefence).Assembly)
+                .AddNewtonsoftJson(opt=> opt.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+                    
 
 
 

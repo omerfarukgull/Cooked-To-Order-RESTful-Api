@@ -1251,19 +1251,6 @@
           }
         }
       },
-      "Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "7.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Core.dll": {}
-        }
-      },
       "Entities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -3770,11 +3757,6 @@
         "version.txt"
       ]
     },
-    "Core/1.0.0": {
-      "type": "project",
-      "path": "../CookedToFoodCore/Core.csproj",
-      "msbuildProject": "../CookedToFoodCore/Core.csproj"
-    },
     "Entities/1.0.0": {
       "type": "project",
       "path": "../CookedToOrderEntity/Entities.csproj",
@@ -3783,7 +3765,6 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Core >= 1.0.0",
       "Entities >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.0",
@@ -3824,9 +3805,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\omerf\\OneDrive\\Masaüstü\\CookedToOrder\\CookedToFoodCore\\Core.csproj": {
-              "projectPath": "C:\\Users\\omerf\\OneDrive\\Masaüstü\\CookedToOrder\\CookedToFoodCore\\Core.csproj"
-            },
             "C:\\Users\\omerf\\OneDrive\\Masaüstü\\CookedToOrder\\CookedToOrderEntity\\Entities.csproj": {
               "projectPath": "C:\\Users\\omerf\\OneDrive\\Masaüstü\\CookedToOrder\\CookedToOrderEntity\\Entities.csproj"
             }

@@ -21,7 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CookedToFoodCore\Core.csproj" />
     <ProjectReference Include="..\CookedToOrderEntity\Entities.csproj" />
   </ItemGroup>
 

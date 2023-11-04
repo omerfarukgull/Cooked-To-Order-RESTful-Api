@@ -50,6 +50,11 @@ namespace Services.Concrete
             return (foods : shapedData, metaData : foodsWithMetaData.MetaData);
         }
 
+        public async Task<IEnumerable<Food>> GetAllFoodWithDetailsAsync()
+        {
+            return await _manager.Food.GetAllFoodWithDetailsAsync();
+        }
+
         public async Task<FoodDto> GetOneFoodByIdAsync(int id)
         {
             var food = await GetOneFoodByIdAndCheckExists(id);

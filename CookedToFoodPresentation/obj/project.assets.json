@@ -2090,19 +2090,6 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "7.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Core.dll": {}
-        }
-      },
       "Entities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -2121,7 +2108,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Core": "1.0.0",
           "Entities": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0",
@@ -6396,11 +6382,6 @@
         "system.xml.xdocument.4.0.11.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
-    },
-    "Core/1.0.0": {
-      "type": "project",
-      "path": "../CookedToFoodCore/Core.csproj",
-      "msbuildProject": "../CookedToFoodCore/Core.csproj"
     },
     "Entities/1.0.0": {
       "type": "project",

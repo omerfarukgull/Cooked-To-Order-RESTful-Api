@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Repositories.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,9 +11,9 @@ namespace Core.DataAccess.Ef
 {
     public abstract class EfCoreGenericRepository<T> : IRepository<T> where T : class
     {
-        protected readonly DbContext _context;
+        protected readonly FoodContext _context;
 
-        public EfCoreGenericRepository(DbContext context)
+        public EfCoreGenericRepository(FoodContext context)
         {
             _context= context;
         }

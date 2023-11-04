@@ -11,8 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "CookedToOrderBu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "CookedToOrderWebApi\WebApi.csproj", "{ACA58E2D-B789-4EE8-B236-C44192FC1372}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "CookedToFoodCore\Core.csproj", "{94E99897-CE65-41CE-AD55-A82416E13630}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presentation", "CookedToFoodPresentation\Presentation.csproj", "{A88D8A31-1C2A-4889-A6B5-A2D805E196C2}"
 EndProject
 Global
@@ -37,10 +35,6 @@ Global
 		{ACA58E2D-B789-4EE8-B236-C44192FC1372}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACA58E2D-B789-4EE8-B236-C44192FC1372}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACA58E2D-B789-4EE8-B236-C44192FC1372}.Release|Any CPU.Build.0 = Release|Any CPU
-		{94E99897-CE65-41CE-AD55-A82416E13630}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{94E99897-CE65-41CE-AD55-A82416E13630}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{94E99897-CE65-41CE-AD55-A82416E13630}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{94E99897-CE65-41CE-AD55-A82416E13630}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A88D8A31-1C2A-4889-A6B5-A2D805E196C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A88D8A31-1C2A-4889-A6B5-A2D805E196C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A88D8A31-1C2A-4889-A6B5-A2D805E196C2}.Release|Any CPU.ActiveCfg = Release|Any CPU

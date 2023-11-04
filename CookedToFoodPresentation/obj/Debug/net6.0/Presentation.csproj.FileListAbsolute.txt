@@ -6,12 +6,10 @@ C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodPresentation\obj\De
 C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodPresentation\bin\Debug\net6.0\Presentation.deps.json
 C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodPresentation\bin\Debug\net6.0\Presentation.dll
 C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodPresentation\bin\Debug\net6.0\Presentation.pdb
-C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodPresentation\bin\Debug\net6.0\Core.dll
 C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodPresentation\bin\Debug\net6.0\Entities.dll
 C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodPresentation\bin\Debug\net6.0\Repositories.dll
 C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodPresentation\bin\Debug\net6.0\Services.dll
 C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodPresentation\bin\Debug\net6.0\Services.pdb
-C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodPresentation\bin\Debug\net6.0\Core.pdb
 C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodPresentation\bin\Debug\net6.0\Entities.pdb
 C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodPresentation\bin\Debug\net6.0\Repositories.pdb
 C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodPresentation\obj\Debug\net6.0\Presentation.csproj.CopyComplete

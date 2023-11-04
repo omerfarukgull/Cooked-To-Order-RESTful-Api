@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Core.DataAccess
 {
-    public interface IRepository<T> where T : class
+    public interface IRepository<T> //where T : class
     {
         T Get(Expression<Func<T,bool>> filter = null);
         IQueryable<T> GetList(Expression<Func<T,bool>> filter = null);

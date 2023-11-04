@@ -701,15 +701,15 @@ namespace WebApi.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "8a97f4a3-e465-4679-9871-7c6ca2539d24",
-                            ConcurrencyStamp = "71494e75-cb29-4ec9-9698-e44194b9d7f1",
+                            Id = "000eb2d6-4b96-421e-b977-ff5ad21c1763",
+                            ConcurrencyStamp = "3851079a-8cd4-40d6-9938-61c3de4cac85",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "c5d5676c-3c86-4a83-a8c5-d97df67c903d",
-                            ConcurrencyStamp = "8d371a01-733e-45bf-9363-9cb0617d7285",
+                            Id = "e2e70518-a0a9-482f-9ea1-bb7aa9760128",
+                            ConcurrencyStamp = "c8a2799b-27a2-47ac-befe-03205d135f11",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });

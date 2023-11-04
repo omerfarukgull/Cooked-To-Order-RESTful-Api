@@ -10,3 +10,8 @@ C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodCore\obj\Debug\net6
 C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodCore\obj\Debug\net6.0\refint\Core.dll
 C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodCore\obj\Debug\net6.0\Core.pdb
 C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodCore\obj\Debug\net6.0\ref\Core.dll
+C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodCore\bin\Debug\net6.0\Entities.dll
+C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodCore\bin\Debug\net6.0\Repositories.dll
+C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodCore\bin\Debug\net6.0\Repositories.pdb
+C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodCore\bin\Debug\net6.0\Entities.pdb
+C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToFoodCore\obj\Debug\net6.0\Core.csproj.CopyComplete

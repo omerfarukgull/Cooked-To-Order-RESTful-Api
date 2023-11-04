@@ -40,6 +40,13 @@ namespace Presentation.Controllers
         }
 
 
+        [Authorize]
+        [HttpGet("details")]
+        public async Task<IActionResult> GetAllFoodWithDetailsAsync()
+        {
+            return Ok(await _manager.FoodService.GetAllFoodWithDetailsAsync());
+        }
+
         [Authorize(Roles = "Admin")]
         [ServiceFilter(typeof(ValidationFilterAttribute))]
         [HttpPost]

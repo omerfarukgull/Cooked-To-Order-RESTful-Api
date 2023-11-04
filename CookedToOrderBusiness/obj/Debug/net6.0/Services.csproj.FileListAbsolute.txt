@@ -6,12 +6,10 @@ C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderBusiness\obj\Debug
 C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderBusiness\bin\Debug\net6.0\Services.deps.json
 C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderBusiness\bin\Debug\net6.0\Services.dll
 C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderBusiness\bin\Debug\net6.0\Services.pdb
-C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderBusiness\bin\Debug\net6.0\Core.dll
 C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderBusiness\bin\Debug\net6.0\Entities.dll
 C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderBusiness\bin\Debug\net6.0\Repositories.dll
 C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderBusiness\bin\Debug\net6.0\Repositories.pdb
 C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderBusiness\bin\Debug\net6.0\Entities.pdb
-C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderBusiness\bin\Debug\net6.0\Core.pdb
 C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderBusiness\obj\Debug\net6.0\Services.csproj.CopyComplete
 C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderBusiness\obj\Debug\net6.0\Services.dll
 C:\Users\omerf\OneDrive\Masaüstü\CookedToOrder\CookedToOrderBusiness\obj\Debug\net6.0\refint\Services.dll

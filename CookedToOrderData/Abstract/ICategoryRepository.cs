@@ -1,9 +1,8 @@
-﻿using Core.DataAccess;
-using Entities.Models;
+﻿using Entities.Models;
 
 namespace Repositories.Abstract
 {
-    public interface ICategoryRepository:IRepository<Category>
+    public interface ICategoryRepository: IRepositortBase<Category>
     {
     }
 }
