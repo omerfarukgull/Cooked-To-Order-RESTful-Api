@@ -153,7 +153,6 @@ namespace Services.Concrete
 
             return principal;
         }
-
         public async Task<TokenDto> RefreshToken(TokenDto tokenDto)
         {
             var principal = GetPrincipalFromExpiredToken(tokenDto.AccessToken);

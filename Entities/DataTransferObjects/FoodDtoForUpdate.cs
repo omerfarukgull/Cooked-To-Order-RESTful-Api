@@ -10,6 +10,9 @@ namespace Entities.DataTransferObjects
     public record FoodDtoForUpdate : FoodDtoForManipulation
     {
         [Required]
-        public int FoodId { get; set;}
+        public int FoodId { get; init; }
+
+        [Required(ErrorMessage = "kategori İd zorunlu bir alan")]
+        public int CategoryId { get; init; }
     }
 }

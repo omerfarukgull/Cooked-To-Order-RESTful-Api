@@ -11,21 +11,26 @@ namespace Services.Concrete
 {
     public class FoodManager : IFoodService
     {
+        private readonly ICategoryService _categoryService;
         private readonly IRepositoryManager _manager;
         private readonly IMapper _mapper;
         private readonly ILoggerService _logger;
         private readonly IDataShaper<FoodDto> _shaper;
-        public FoodManager(IRepositoryManager manager, IMapper mapper, ILoggerService logger, IDataShaper<FoodDto> shaper)
+        public FoodManager(IRepositoryManager manager, IMapper mapper, ILoggerService logger, IDataShaper<FoodDto> shaper, ICategoryService categoryService)
         {
             _manager = manager;
             _mapper = mapper;
             _logger = logger;
             _shaper = shaper;
+            _categoryService = categoryService;
         }
 
         public async Task<FoodDto> CreateOneFoodAsync(FoodDtoForInsertion foodDto)
         {
+            var category = await _categoryService.GetOneCategoryByIdAsync(foodDto.CategoryId);
+
             var entity = _mapper.Map<Food>(foodDto);
+
             _manager.Food.Create(entity);
             await _manager.SaveAsync();
             return _mapper.Map<FoodDto>(entity);
@@ -64,6 +69,8 @@ namespace Services.Concrete
 
         public async Task UpdateOneFoodAsync(int id, FoodDtoForUpdate foodDto)
         {
+            var category = await _categoryService.GetOneCategoryByIdAsync(foodDto.CategoryId);
+
             var entity = await GetOneFoodByIdAndCheckExists(id);
 
             entity = _mapper.Map<Food>(foodDto);

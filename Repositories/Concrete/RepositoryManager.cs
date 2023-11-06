@@ -11,18 +11,19 @@ namespace Repositories.Concrete
     public class RepositoryManager:IRepositoryManager
     {
         private readonly FoodContext _context;
-        private readonly Lazy<IFoodRepository> _foodRepository;
-        private readonly Lazy<ICategoryRepository> _categoryRepository;
-        public RepositoryManager(FoodContext context)
+        private readonly IFoodRepository _foodRepository;
+        private readonly ICategoryRepository _categoryRepository;
+
+        public RepositoryManager(FoodContext context, IFoodRepository foodRepository, ICategoryRepository categoryRepository)
         {
             _context = context;
-            _foodRepository = new Lazy<IFoodRepository>(() => new EfFoodRepository(_context));
-            _categoryRepository = new Lazy<ICategoryRepository>(() => new EfCategoryRepository(_context));
+            _foodRepository = foodRepository;
+            _categoryRepository = categoryRepository;
         }
 
-        public IFoodRepository Food => _foodRepository.Value;
+        public IFoodRepository Food => _foodRepository;
 
-        public ICategoryRepository Category => _categoryRepository.Value;
+        public ICategoryRepository Category => _categoryRepository;
 
         public async Task SaveAsync()
         {

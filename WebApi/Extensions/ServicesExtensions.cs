@@ -97,5 +97,17 @@ namespace Entities.Extensions
 
         }
 
+        public static void RegisterRepositories(this IServiceCollection services)
+        {
+            services.AddScoped<IFoodRepository, EfFoodRepository>();
+            services.AddScoped<ICategoryRepository, EfCategoryRepository>();
+        }
+        public static void RegisterServices(this IServiceCollection services)
+        {
+            services.AddScoped<IFoodService, FoodManager>();
+            services.AddScoped<ICategoryService, CategoryManager>();
+            services.AddScoped<IAuthenticationService, AuthenticationManager>();
+        }
+
     }
 }
